@@ -72,7 +72,7 @@ const employees: Employee[] = [
 ];
 
 export default async function EmployeesPage() {
-  await setTimeout(() => {}, 3000);
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   return (
     <Card>
       <CardHeader>
